@@ -55,4 +55,8 @@
   .arrow-right {
     @apply text-[#FFB22C] mr-2
   }
+
+  .social_links{
+    @apply text-white hover:text-[#FFB22C] transition-colors
+  }
 }

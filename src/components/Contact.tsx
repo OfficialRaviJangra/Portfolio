@@ -25,14 +25,14 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Name"
-                  className="w-full px-4 py-3 bg-[#112240] rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                  className="w-full px-4 py-3 bg-[#ffffff] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFB22C]"
                 />
               </div>
               <div>
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full px-4 py-3 bg-[#112240] rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                  className="w-full px-4 py-3 bg-[#ffffff] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFB22C]"
                 />
               </div>
             </div>
@@ -40,7 +40,7 @@ const Contact = () => {
               <textarea
                 placeholder="Message"
                 rows={5}
-                className="w-full px-4 py-3 bg-[#112240] rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                className="w-full px-4 py-3 bg-[#ffffff] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FFB22C]"
               ></textarea>
             </div>
             <button type="submit" className="btn-primary">
@@ -53,7 +53,7 @@ const Contact = () => {
               href="https://github.com/OfficialRaviJangra"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-teal-400 transition-colors"
+              className="social_links"
             >
               <FiGithub className="w-6 h-6" />
             </a>
@@ -61,7 +61,7 @@ const Contact = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-teal-400 transition-colors"
+              className="social_links"
             >
               <FiLinkedin className="w-6 h-6" />
             </a>
@@ -69,13 +69,13 @@ const Contact = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-teal-400 transition-colors"
+              className="social_links"
             >
               <FiTwitter className="w-6 h-6" />
             </a>
             <a
               href="mailto:insanejangra0001@gmail.com"
-              className="text-gray-300 hover:text-teal-400 transition-colors"
+              className="social_links"
             >
               <FiMail className="w-6 h-6" />
             </a>
