@@ -9,7 +9,7 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'MongoDB'],
     github: 'https://github.com',
     live: 'https://example.com',
-    image: '/project1.jpg'
+    image: '/project1.webp'
   },
   {
     title: 'Task Management App',
@@ -17,7 +17,7 @@ const projects = [
     tech: ['React', 'Node.js', 'Socket.io', 'PostgreSQL'],
     github: 'https://github.com',
     live: 'https://example.com',
-    image: '/project2.jpg'
+    image: '/project2.webp'
   },
   {
     title: 'Weather Dashboard',
@@ -25,7 +25,7 @@ const projects = [
     tech: ['React', 'OpenWeather API', 'Chart.js', 'Tailwind CSS'],
     github: 'https://github.com',
     live: 'https://example.com',
-    image: '/project3.jpg'
+    image: '/project3.webp'
   }
 ];
 
@@ -50,7 +50,7 @@ const Projects = () => {
                 viewport={{ once: true }}
                 className="card group"
               >
-                <div className="grid  gap-6">
+                <div className="grid gap-6">
                   <div className="relative h-64 md:h-full rounded-lg overflow-hidden">
                     <div className="absolute inset-0 bg-teal-400/20 group-hover:bg-transparent transition-colors duration-300"></div>
                     <img
@@ -60,13 +60,13 @@ const Projects = () => {
                     />
                   </div>
                   <div className="space-y-4">
-                    <h3 className="text-2xl font-bold text-teal-400">{project.title}</h3>
-                    <p className="text-gray-300">{project.description}</p>
+                    <h3 className="text-2xl font-bold text-[#FFB22C]">{project.title}</h3>
+                    <p className="text-gray-400">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="text-sm text-teal-400 bg-teal-400/10 px-3 py-1 rounded-full"
+                          className="text-sm text-[#FFB22C] bg-[#FFB22C]/10 px-3 py-1 rounded-full"
                         >
                           {tech}
                         </span>
@@ -77,7 +77,7 @@ const Projects = () => {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-teal-400 transition-colors"
+                        className="text-gray-400 hover:text-[#FFB22C] transition-colors"
                       >
                         <FiGithub className="w-6 h-6" />
                       </a>
@@ -85,7 +85,7 @@ const Projects = () => {
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-teal-400 transition-colors"
+                        className="text-gray-400 hover:text-[#FFB22C] transition-colors"
                       >
                         <FiExternalLink className="w-6 h-6" />
                       </a>
