@@ -1,7 +1,7 @@
 "use client"
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import dynamic from "next/dynamic"
-
+import { useRef } from 'react';
 const World = dynamic(() => import("./ui/Globe").then((m) => m.World), {
   ssr: false,
 });
@@ -394,6 +394,14 @@ const Hero = () => {
     },
   ];
 
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [400, -500]);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 z-0 overflow-hidden">
       <div className="container mx-auto px-4 z-10">
@@ -447,9 +455,16 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div id='#globe' className='absolute flex flex-1 justify-center items-center h-full w-full opacity-50'>
-        <World data={sampleArcs} globeConfig={globeConfig} />
-      </div>
+      <motion.div
+        ref={ref}
+        className='absolute flex flex-1 justify-center items-center h-full w-full lg:w-[50%] opacity-50'
+        style={{ translateY }}
+      >
+        <World
+          data={sampleArcs}
+          globeConfig={globeConfig}
+        />
+      </motion.div>
     </section>
   );
 };
