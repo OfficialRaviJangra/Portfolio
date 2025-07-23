@@ -50,8 +50,8 @@ const About = () => {
               </ul>
             </div>
             <div className="relative mx-auto w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 bg-teal-400 rounded-lg transform rotate-3"></div>
-              <div className="absolute inset-0 bg-[#0a192f] rounded-lg transform -rotate-3 overflow-hidden">
+              <div className="absolute inset-0 bg-[#ffffff] rounded-lg transform rotate-3"></div>
+              <div className="absolute inset-0 bg-[#FFB22C] rounded-lg transform -rotate-3 overflow-hidden">
                 <Image
                   src="/my_image.png"
                   alt="Profile"

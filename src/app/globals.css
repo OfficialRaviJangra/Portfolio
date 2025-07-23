@@ -52,7 +52,7 @@
     @apply bg-[#112240] p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300;
   }
 
-  .right-arrow {
+  .arrow-right {
     @apply text-[#FFB22C] mr-2
   }
 }
